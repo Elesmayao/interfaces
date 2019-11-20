@@ -1,3 +1,60 @@
-body{
-	background-color: red;
+.publicidad{
+	width: 100%;
+	overflow: hidden;
+	background-color: #3DBBD0;
+	margin-bottom: 20px;
+}
+
+header {
+	width: 100%;
+	overflow: hidden;
+	background-color: #3DBBD0;
+	margin-bottom: 20px;
+
+}
+
+.margenAll{
+	width: 90%;
+	max-width: 1300px;
+	margin:auto;
+	overflow: hidden;
+}
+
+header .logo {
+	color: #FFFFFF;
+	font-size: 50px;
+	line-height:100px;
+	float: left;
+}
+
+header nav{
+	float:right;
+	line-height: 100px;
+}
+
+header nav a{
+	display: inline-block;
+	color: #FFFFFF;
+	text-decoration: none;
+	padding: 10px 20px;
+	line-height:normal;
+	font-size: 20px;
+	font-weight: bold;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease ;
+
+}
+
+header nav a#anuncio{
+	font-size: 25px;
+}
+
+header nav a#iniciar{
+	font-size: 25px;
+}
+
+header nav a:hover{
+	background:#FFFFFF;
+	border-radius: 50px;
 }
