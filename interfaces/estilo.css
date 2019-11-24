@@ -1,60 +1,147 @@
-.publicidad{
-	width: 100%;
-	overflow: hidden;
-	background-color: #3DBBD0;
-	margin-bottom: 20px;
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "header" "content" "footer";
 }
 
-header {
-	width: 100%;
-	overflow: hidden;
-	background-color: #3DBBD0;
-	margin-bottom: 20px;
-
+.header { 
+	grid-area: header; 
 }
 
-.margenAll{
-	width: 90%;
-	max-width: 1300px;
-	margin:auto;
-	overflow: hidden;
+.content { 
+	grid-area: content; 
 }
 
-header .logo {
-	color: #FFFFFF;
-	font-size: 50px;
-	line-height:100px;
-	float: left;
+
+.footer { 
+	grid-area: footer; 
 }
 
-header nav{
-	float:right;
-	line-height: 100px;
+.main{
+	padding: 8rem;
+	text-align: center;
 }
 
-header nav a{
-	display: inline-block;
-	color: #FFFFFF;
+body{
+	font-family: georgia;
+	color: #3E4341;
+	font-size: 1.2rem;
+	line-height: 1.6em;
+	margin:0;
+}
+
+p{
+	margin: 1.6em;
+}
+
+.container{
+	width: 85%;
+	max-width: 1200px;
+	margin: 0 auto ;
+}
+
+.header{
+	background:#3DBBD0;
+	color:#3E4341;
+	padding: 2rem 0;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+}
+
+.header a{
+	color: white;
 	text-decoration: none;
-	padding: 10px 20px;
-	line-height:normal;
-	font-size: 20px;
-	font-weight: bold;
-	-webkit-transition:all 500ms ease;
-	-o-transition:all 500ms ease;
-	transition:all 500ms ease ;
+}
+
+
+.logo-nav-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.logo{
+	letter-spacing: 5px;
+	font-size: 1.6em;
+}
+
+.menu-icon{
+	display: none;
+}
+
+.navigation ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.navigation ul li {
+	display: inline-block;
+}
+
+.navigation ul li a{
+	display: block;
+	padding: 0.5rem 0.5rem;
+	border-radius: 5px;
+}
+
+.navigation ul li a:hover{
+	background:#4a4a4a ;
+}
+
+.menu-con-iconos{
+	display: flex;
+
+
+}
+.lista-iconos-menu img{
+	width: 50px;
+}
+
+.lista-iconos-menu ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 15px;
 
 }
 
-header nav a#anuncio{
-	font-size: 25px;
+.menu-con-iconos{
+	display: block;
 }
+@media (max-width: 800px){
+	.menu-icon{
+		display: block;
+		cursor: pointer;
+		padding: 0.5rem 1rem;
+	}
+	.navigation{
+		width: 100%;
+		margin-top: 1rem;
+	}
 
-header nav a#iniciar{
-	font-size: 25px;
-}
+	.navigation ul{
+		display: none;
+	}
 
-header nav a:hover{
-	background:#FFFFFF;
-	border-radius: 50px;
+	.navigation ul.show{
+		display: block;
+	}
+
+	.navigation ul li {
+		display:block;
+	}
+
+	.navigation ul li a{
+		display: block;
+		padding: 0.5rem 0;
+		border-radius: 5px;
+	}
+
+	.navigation ul li a:hover{
+		background:#4a4a4a ;
+	}
 }
