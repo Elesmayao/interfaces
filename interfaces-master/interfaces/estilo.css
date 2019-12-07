@@ -52,6 +52,10 @@ body{
 	text-decoration: none;
 }
 
+.pontuanuncio{
+	background: #4a4a4a;
+}
+
 
 .logo-nav-container{
 	display: flex;
@@ -94,6 +98,14 @@ body{
 
 
 }
+
+.lista-iconos-menu img:hover{
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-o-transform: scale(1.2);
+}
+
 .lista-iconos-menu img{
 	width: 50px;
 }
@@ -115,7 +127,16 @@ body{
 .destacados {
 	white-space: wrap;
 	width: auto;
-	margin-top: 30%;
+	margin-top: 10%;
+	background: #F2F3F5;
+	padding-bottom: 5%;
+}
+
+.interesaMuebles{
+	white-space: wrap;
+	width: auto;
+	margin-top: 10%;
+	background: #F2F3F5;
 }
 
 #barrabusqueda{
@@ -128,26 +149,215 @@ body{
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	margin-left:7%;
+	margin-right:7%;
+}
+
+.imagenesInteresa{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-left:7%;
+	margin-right:7%;
+	padding-bottom:5%;
 }
 
 .imagenesDestacados div{
-	border: solid 1px #E1E3E5;
 	margin-bottom: 10px;
-	border-radius: 10px;
+}
+
+.imagenesInteresa div{
+	margin-bottom: 10px;
 }
 .imagenesDestacados img{
+	margin-top: 10px;
 	width: 250px;
 	height: 250px;
 	border-radius:10px;
 }
 
-#textoDestacado{
+.imagenesInteresa img{
+	margin-top: 10px;
+	width: 250px;
+	height: 250px;
+	border-radius:10px;
+}
+
+.textoDestacado{
 	border-bottom-right-radius: 10px;
 	border-bottom-left-radius: 10px;
 	background: #E1E3E5;
 }
 
+.textoInteresa{
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	background: #E1E3E5;
+}
 
+.imagenesDestacados div:hover{
+	-webkit-transform: scale(1.07);
+	-ms-transform: scale(1.07);
+	-moz-transform: scale(1.07);
+	-o-transform: scale(1.07);
+}
+
+.destacados div{
+	-webkit-transition: transform .5s;
+	-ms-transition: transform .5s;
+	-moz-transition: transform .5s;
+	-o-transition: transform .5s;
+}
+
+.imagenesInteresa div:hover{
+	-webkit-transform: scale(1.07);
+	-ms-transform: scale(1.07);
+	-moz-transform: scale(1.07);
+	-o-transform: scale(1.07);
+}
+
+.interesaMuebles div{
+	-webkit-transition: transform .5s;
+	-ms-transition: transform .5s;
+	-moz-transition: transform .5s;
+	-o-transition: transform .5s;
+}
+
+.renovar{
+	margin-top: 10%;
+	margin-bottom: 5%;
+	padding-top: 5%;
+}
+
+.lomasdestacado{
+	margin-bottom: 5%;
+	padding-top: 5%;
+}
+
+footer{
+    width: 100%;
+    background: #202020;
+	color: white;  
+	margin-top: 10%; 
+    
+}
+
+.container-footer-all{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container-body{
+    display: flex;
+	justify-content: space-between;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.colum1{
+    max-width: 400px;
+}
+
+.colum1 h1{
+    font-size: 18px;
+}
+
+.colum1 p{
+    font-size: 14px;
+    color: #C7C7C7;
+    margin-top: 20px;
+}
+
+.colum2{
+    max-width: 400px;
+    
+}
+
+.colum2 h1{
+    font-size: 18px;
+}
+
+.row{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row img{
+    width: 36px;
+    height: 36px;
+}
+
+.row label{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #C7C7C7;
+}
+
+.colum3{
+    max-width: 400px;
+}
+
+.colum3 h1{
+    font-size: 18px;
+}
+
+.row2{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row2 img{
+    width: 36px;
+    height: 36px;
+}
+
+.row2 label{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.container-footer{
+    width: 100%;  
+    background: #101010;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;  
+  
+}
+
+.copyright{
+    color: #C7C7C7;
+}
+
+.copyright a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.information a{
+    text-decoration: none;
+    color: #C7C7C7;
+}
+
+
+@media screen and (max-width: 1100px){
+    
+    .container-body{
+        flex-wrap: wrap;
+    }
+    
+    .colum1{
+        max-width: 100%;
+    }
+    
+    .colum2,
+    .colum3{
+        margin-top: 40px;
+    }
 
 @media (max-width: 800px){
 	.menu-icon{
@@ -207,6 +417,11 @@ body{
 		margin-right: auto;
 		margin-bottom: 10px;
 	}
+	.imagenesInteresa div{
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 10px;
+	}
 }
 
 @media (max-width: 411px){
@@ -217,8 +432,5 @@ body{
 	.lista-iconos-menu ul li:nth-child(4){
   		display: none;
 	}
-
-	
-
 
 }
