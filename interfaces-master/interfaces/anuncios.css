@@ -18,6 +18,9 @@
       grid-area: footer; 
   }
   
+  .pontuanuncio{
+	background: #4a4a4a;
+}
   
   
   body{
@@ -167,6 +170,36 @@
         -moz-transform:translate(0px,-25px);
         -o-transform:translate(0px,-25px);
     }
+
+    .btn{
+        color: #0099CC;
+        background: transparent;
+        border: 2px solid #0099CC;
+        border-radius: 6px;
+        border: none;
+        color: white;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        -webkit-transition-duration: 0.4s;
+        -moz-transition-duration: 0.4s;
+        -ms-transition-duration: 0.4s;
+        -o-transition-duration: 0.4s;
+        cursor: pointer;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    .btn{
+        background-color: white; 
+        color: black; 
+        border: 2px solid #008CBA;
+        }
+        
+        .btn:hover {
+        background-color: #008CBA;
+        color: white;
+        }
   
   footer{
       width: 100%;
@@ -213,14 +246,26 @@
   }
   
   .row{
-      margin-top: 20px;
-      display: flex;
-  }
-  
-  .row img{
-      width: 36px;
-      height: 36px;
-  }
+    margin-top: 20px;
+	display: flex;
+	-webkit-perspective: 800px;
+    -ms-perspective: 800px;
+    -moz-perspective: 800px;
+    -o-perspective: 800px;
+}
+
+.row img{
+    width: 36px;
+	height: 36px;
+	transition: all 1s ease;
+}
+
+/*animacion 3d con translate*/
+
+.row img:hover{
+    
+	transform: translate3d(10px,10px,100px);
+}
   
   .row label{
       margin-top: 10px;
