@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Gamming</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="anuncios.css">
+	
+	
+</head>
+<body>
+	<div class="grid-container">
+  		<div class="header">
+  			<header class="headerUno">
+  				<div class="container logo-nav-container">
+					<a href="#contactos" class="logo">Sell fast</a>
+					<!--Utilizo el atributo translate en Ver menú para que no se traduzca--> 
+  					<span class="menu-icon" translate="no">Ver menú</span>
+  					<nav class="navigation">
+  						<ul>
+  							<li><a href="index.html">Mensajes</a></li>
+  							<li><a href="index.html">Tus anuncios</a></li>
+  							<li><a href="index.html">Favoritos</a></li>
+  							<li><a href="ayuda.html" class>Ayuda</a></li>
+  							<li><a href="index.html" class="pontuanuncio">Pon tu anuncio</a></li>
+  							<li><a href="index.html">Iniciar sesión</a></li>
+  						</ul>
+  					</nav>
+  				</div>
+  			</header>
+  		</div>
+   		<div class="contenido">
+   			<div class="main">
+					<div class="video">
+						<video src="imagenes/video1.mp4" autoplay muted></video>
+					</div>
+					<div class="migasdepan">
+						<a href="index.html">home</a>/<a href="index.html">Sección</a>/<a href="#">Gamming</a>
+					</div>
+					<section class="todologamming">
+						<h2>Todo lo que quieras encontrar de Gamming</h2>
+						<!--Uso la etiqueta semantica article-->
+						<article>
+							<h2>!ESTÁ AQUÍ!</h2>
+						</article>
+					</section> 
+                   <form>
+						<label for="barrabusqueda">Quiero buscar...</label>
+						<!--El autocomplete permite predecir al navegador el valor, en función de los valores introducidos anteriormente , el navegador nos muestra
+							opciones para completar el campo. He utilizado autocomplete OFF porque es en el único input que he podido utilizarlo en este form-->
+						<input type="search" id="barrabusqueda" autocomplete="off">
+					    <div class="filtrar">                      
+							<ul>
+								<li>
+									<label for="selectFiltrar">Sección: </label>
+									<select class="selectFiltrar" id="selectFiltrar">
+										<option value="Gamming" >Gamming</option>
+										<option value="Moviliario">Moviliario</option>
+										<option value="Vehiculos">Vehiculos</option>
+										<option value="Ordenadores">Ordenadores</option>
+										<option value="Moviles">Moviles</option>
+										<option value="audi">Moda</option>
+										<option value="audi">Deportes</option>
+									</select>
+								</li>
+								<li>
+									<!--Autofocus hace que ese input sea el foco para ingresar información cuando se carga la página, a no ser que el usuario lo cambie 
+									(escribiendo en otro lugar o haciendo click en otro sitio por ejemplo).
+									Lo he utilizado en este input por si el usuario quiere buscar algo por un precio en concreto solo tenga que escribir 
+									el precio nada mas entrar.-->
+									<label for="selectPrecio">Precio: </label>
+									<input type="number" id="selectPrecio" placeholder="Precio.." autofocus>
+								</li>
+								<li>
+									<label for="envios">Hago envíos</label>
+									<input type="checkbox" id="envios" name="selectExtra">
+									<label for="acepto">Acepto Intercambios</label>
+									<input type="checkbox" id="acepto" name="selectExtra">
+									<label for="urge">Le urge vender</label>
+									<input type="checkbox" id="urge" name="selectExtra">
+								</li>	
+								<li>
+									<label for="24">24h</label>
+									<input type="radio" id="24" value="24h" name="selectFecha">
+									<label for="7">7 días</label>
+									<input type="radio" id="7" value="7dias" name="selectFecha">
+									<label for="30">30 días</label>
+									<input type="radio" id="30" value="30dias" name="selectFecha">
+								</li>	
+							</ul>
+							<button type="submit" class="btn">Filtrar</button>
+						</div>
+						
+					</form>
+					<div class="contenidoGamming">
+							<div class="imagenesGamming">
+								<div class="divGamming">
+									<a href=""><img src="imagenes/pcgamer.jpg" alt="PC GAMER"></a>
+									<div class="textoGamming">
+										<p>Bici Montaña</p>
+										<!--Utilizo la etiqueta semantica details-->
+										<details>
+											<!--utilizo la etiqueta semántica Summary-->
+											<summary>Precio:</summary>
+											<!--utilizo la etiqueta semántica Mark-->
+											<p><mark>10€</mark></p>
+										</details>
+									</div>
+								</div>
+								<div class="divGamming">
+									<a href=""><img src="imagenes/bicimonta.jpg" alt="Bicicletas de montaña"></a>
+									<div class="textoGamming">
+										<p>PC GAMER</p>
+										<details>
+											<summary>Precio:</summary>
+											<p><mark>10€</mark></p>
+										</details>
+									</div>
+								</div>
+								<div class="divGamming">
+									<a href=""><img src="imagenes/play4.jpg" alt="Play 4"></a>
+									<div class="textoGamming">
+										<p>PC GAMER</p>
+										<details>
+											<summary>Precio:</summary>
+											<p><mark>10€</mark></p>
+										</details>					
+									</div>
+								</div>
+								<div class="divGamming">                	
+									<a href=""><img src="imagenes/iphone11.jpg" alt="IPHONE X"></a>  
+									<div class="textoGamming">
+										<p>PC GAMER</p>
+										<details>
+											<summary>Precio:</summary>
+											<p><mark>10€</mark></p>
+										</details>	
+									</div>                  
+								</div>
+								<div class="divGamming">                	
+									<a href=""><img src="imagenes/iphone11.jpg" alt="IPHONE X"></a>  
+									<div class="textoGamming">
+										<p>PC GAMER</p>
+										<details>
+											<summary>Precio:</summary>
+											<p><mark>10€</mark></p>
+										</details>
+									</div>                  
+								</div>
+								<div class="divGamming">                	
+									<a href=""><img src="imagenes/iphone11.jpg" alt="IPHONE X"></a>  
+									<div class="textoGamming">
+										<p>PC GAMER</p>
+										<details>
+											<summary>Precio:</summary>
+											<p><mark>10€</mark></p>
+										</details>
+									</div>                  
+								</div>
+								<div class="divGamming">                	
+									<a href=""><img src="imagenes/iphone11.jpg" alt="IPHONE X"></a>  
+									<div class="textoGamming">
+										<p>PC GAMER</p>
+										<details>
+											<summary>Precio:</summary>
+											<p><mark>10€</mark></p>
+										</details>
+									</div>                  
+								</div>
+								<div class="divGamming">                	
+									<a href=""><img src="imagenes/iphone11.jpg" alt="IPHONE X"></a>  
+									<div class="textoGamming">
+										<p>PC GAMER</p>
+										<details>
+											<summary>Precio:</summary>
+											<p><mark>10€</mark></p>
+										</details>
+									</div>                  
+								</div>
+								<div class="divGamming">                	
+									<a href=""><img src="imagenes/iphone11.jpg" alt="IPHONE X"></a>  
+									<div class="textoGamming">
+										<p>PC GAMER</p>
+										<details>
+											<summary>Precio:</summary>
+											<p><mark>10€</mark></p>
+										</details>
+									</div>                  
+								</div>
+								<div class="divGamming">                	
+									<a href=""><img src="imagenes/iphone11.jpg" alt="IPHONE X"></a>  
+									<div class="textoGamming">
+										<p>PC GAMER</p>
+										<details>
+											<summary>Precio:</summary>
+											<p><mark>10€</mark></p>
+										</details>
+									</div>                  
+								</div>
+								<div class="divGamming">                	
+									<a href=""><img src="imagenes/iphone11.jpg" alt="IPHONE X"></a>  
+									<div class="textoGamming">
+										<p>PC GAMER</p>
+										<details>
+											<summary>Precio:</summary>
+											<p><mark>10€</mark></p>
+										</details>
+									</div>                  
+								</div>
+								<div class="divGamming">                	
+									<a href=""><img src="imagenes/iphone11.jpg" alt="IPHONE X"></a>  
+									<div class="textoGamming">
+										<p>PC GAMER</p>
+										<details>
+											<summary>Precio:</summary>
+											<p><mark>10€</mark></p>
+										</details>
+									</div>                  
+								</div>
+
+							</div>
+						</div>
+						
+            </div>
+                   <div class="anuncios">
+
+                   </div>			
+		</div>
+ 		<div class="footer">
+			<footer>
+       
+				<div class="container-footer-all">
+						 
+				   	<div class="container-body">
+				 
+						<div class="colum1">
+							<h1>Mas informacion de la compañia</h1>
+				 
+							<p>Compañía dedicada a poner en contacto a compradores y vendedores de productos nuevos y de segunda mano </p>
+				 
+						</div>
+				 
+						<div class="colum2">
+				 
+							<h1>Redes Sociales</h1>
+					
+							<div class="row">
+								<a href="facebook.com" target="blank"><img src="imagenes/facebook.png" alt="Facebook"></a>
+								<p>Siguenos en Facebook<p>
+							</div>
+							<div class="row">
+								<a href="twitter.com" target="blank"><img src="imagenes/twitter.png" alt="Twitter"></a>
+								<p>Siguenos en Twitter<p>
+							</div>
+							<div class="row">
+								<a href="instagram.com" target="blank"><img src="imagenes/instagram.png" alt="Instagram"></a>
+								<p>Siguenos en Instagram<p>
+							</div>
+							<div class="row">
+								<a href="google.com" target="blank"><img src="imagenes/google-plus.png" alt="Google Plus"></a>
+								<p>Siguenos en Google Plus<p>
+							</div>
+							<div class="row">
+								<a href="https://www.pinterest.es/" target="blank"><img src="imagenes/pinterest.png" alt="Pinterest"></a>
+								<p>Siguenos en Pinterest<p>
+							</div>
+	
+	
+						</div>
+	
+						<div class="colum3" id="contactos">
+		
+							<h1>Informacion Contactos</h1>
+		
+							<div class="row2">
+								<img src="imagenes/house.png" alt="Direccion">
+								<p>Sevilla, 
+								España<br>
+								Avenida Turia,
+								ADA-ITS</p>
+							</div>
+		
+							<div class="row2">
+								<img src="imagenes/smartphone.png" alt="Contacto">
+								<p>+34 954847234</p>
+							</div>
+		
+							<div class="row2">
+								<img src="imagenes/contact.png" alt="Email" id="email">
+								<p>alfredo.bartolote@adaits.es</p>
+							</div>
+						</div>
+	
+					</div>
+			
+				</div>
+			
+			<div class="container-footer">
+				<div class="footer">
+					<div class="copyright">
+						© 2019 Todos los Derechos Reservados | <a href="index.html">SellFast.</a>
+					</div>
+
+					<div class="information">
+						<a href="index.html">Informacion Compañia</a> | <a href="index.html">Privacion y Politica</a> | <a href="index.html">Terminos y Condiciones</a>
+					</div>
+				</div>
+	
+			</div>
+			
+			</footer>
+ 		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="scripts.js"></script>
+</body>
+</html>

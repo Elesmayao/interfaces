@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Ayuda</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="ayuda.css">
+	
+	
+</head>
+<body>
+	<div class="grid-container">
+  		<div class="header">
+  			<header class="headerUno">
+  				<div class="container logo-nav-container">
+                    <a href="#contacto" class="logo">Sell fast</a>
+                    <!--Utilizo el atributo translate en Ver menú para que no se traduzca-->  
+  					<span class="menu-icon" translate="no">Ver menú</span>
+  					<nav class="navigation">
+  						<ul>
+  							<li><a href="index.html">Mensajes</a></li>
+  							<li><a href="index.html">Tus anuncios</a></li>
+  							<li><a href="index.html">Favoritos</a></li>
+  							<li><a href="ayuda.html" class="ayuda">Ayuda</a></li>
+  							<li><a href="index.html" class="pontuanuncio">Pon tu anuncio</a></li>
+  							<li><a href="index.html">Iniciar sesión</a></li>
+  						</ul>
+  					</nav>
+  				</div>
+  			</header>
+  		</div>
+   		<div class="contenido">
+   			<div class="main">
+                <div class="migasdepan">
+                    <a href="index.html">Home</a>/<a href="index.html">Ayuda.</a>/Problemas con un vendedor
+                </div>
+				<div class="tituloAyuda">
+                    <a href="index.html" class="logoTitulo"><img src="imagenes/sellfast.JPG" alt="Sellfast logotipo"></a>
+                    <h1>¿En qué podemos ayudarte?</h1>     
+                </div>
+                <div class="formulario">
+                    <div class="sugerencias">
+                        <!--utilizo la etiqueta semantica section-->
+                        <section class="lomasvisitado">
+                                <h2>Lo más visitado</h2>
+                        </section>
+                        <div class="sugeInterior">
+                            Gestión de mis anuncios
+                        </div>
+                        <div class="sugeInterior">
+                            Compra y vende seguro
+                        </div>
+                        <div class="sugeInterior">
+                            Modificación de datos
+                        </div>
+                        <div class="sugeInterior">
+                            Mi área de gestión
+                        </div>
+                        <div class="sugeInterior">
+                            Problemas con el envío
+                        </div>
+                        <div class="sugeInterior">
+                            Sobre tus datos
+                        </div>
+                        
+                    </div>
+                    <div class="formularioAyuda">
+                        <form>
+                            <div class="exterior">
+                                <div class="interior">
+                                    <label for="nombre">Nombre</label>
+                                    <!--El autocomplete permite predecir al navegador el valor, en función de los valores introducidos anteriormente , el navegador nos muestra
+                                    opciones para completar el campo. He utilizado autocomplete OFF para que no salgan los anteriores nombres introducidos-->    
+                                    
+                                    <!--Autofocus hace que ese input sea el foco para ingresar información cuando se carga la página, a no ser que el usuario lo cambie 
+									(escribiendo en otro lugar o haciendo click en otro sitio por ejemplo).
+									Lo he utilizado en este input para que el usuario comience a rellenar los datos directamente.-->
+                                    <input type="text" id="nombre" autocomplete="off" autofocus>
+                                    <p>Facilitanos tu nombre para dirigirnos</p>
+                                </div>
+                            </div>
+                            <div class="exterior">
+                                <div class="interior">
+                                    <label for="tuemail">Email</label>
+                                    <input type="email" id="tuemail">
+                                    <p>Facilitanos un email de contacto</p>
+                                </div>
+                            </div>  
+                            <div class="exterior">
+                                <div class="interior">
+                                    <label for="telefono">Teléfono</label>
+                                    <input type="tel" id="telefono">
+                                    <p>Facilitanos un teléfono de contaco</p>
+                                </div>
+                            </div>
+                            <div class="exterior">
+                                <div class="interior">
+                                    <label for="fecha">Fecha</label>
+                                    <!--En el validador me salta warning en el type input porque no es compatible con todos los navegadores,
+                                    tendría que instalar un pollyfill(plugin)-->
+                                    <input type="date" id="fecha">
+                                    <p>Indicanos la fecha en la que ocurrió</p>
+                                </div>
+                            </div>
+                            <div class="exterior">
+                                <div class="interior">
+                                    <label for="imagen">Archivo</label>
+                                    <input type="file" id="imagen">
+                                   <p>Sube imágenes de lo ocurrido</p>
+                                </div>
+                            </div>
+                            <div class="exterior">
+                                <div class="interior">
+                                    <label for="cuentanos">Descripción</label>
+                                    <input type="text" id="cuentanos">
+                                    <p>Cuentanos lo ocurrido</p>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+                <footer>
+           
+                    <div class="container-footer-all">
+                             
+                           <div class="container-body">
+                     
+                            <div class="colum1">
+                                <h1>Mas informacion de la compañia</h1>
+                     
+                                <p>Compañía dedicada a poner en contacto a compradores y vendedores de productos nuevos y de segunda mano </p>
+                     
+                            </div>
+                     
+                            <div class="colum2">
+                     
+                                <h1>Redes Sociales</h1>
+                        
+                                <div class="row">
+                                    
+                                    <a href="facebook.com" target="blank"><img src="imagenes/facebook.png" alt="Facebook"></a>
+                                    <p>Siguenos en Facebook<p>
+                                </div>
+                                <div class="row">
+                                    <a href="twitter.com" target="blank"><img src="imagenes/twitter.png" alt="Twitter"></a>
+                                    <p>Siguenos en Twitter<p>
+                                </div>
+                                <div class="row">
+                                    <a href="instagram.com" target="blank"><img src="imagenes/instagram.png" alt="Instagram"></a>
+                                    <p>Siguenos en Instagram<p>
+                                </div>
+                                <div class="row">
+                                    <a href="google.com" target="blank"><img src="imagenes/google-plus.png" alt="Google Plus"></a>
+                                    <p>Siguenos en Google Plus<p>
+                                </div>
+                                <div class="row">
+                                    <a href="https://www.pinterest.es/" target="blank"><img src="imagenes/pinterest.png" alt="Pinterest"></a>
+                                    <p>Siguenos en Pinterest<p>
+                                </div>
+        
+        
+                            </div>
+        
+                            <div class="colum3" id="contacto">
+            
+                                <h1>Informacion Contactos</h1>
+            
+                                <div class="row2">
+                                    <img src="imagenes/house.png" alt="Direccion">
+                                    <p>Sevilla, 
+                                    España<br>
+                                    Avenida Turia,
+                                    ADA-ITS</p>
+                                </div>
+            
+                                <div class="row2">
+                                    <img src="imagenes/smartphone.png" alt="Contacto">
+                                    <p>+34 954847234</p>
+                                </div>
+            
+                                <div class="row2">               
+                                    <img src="imagenes/contact.png" alt="Email" id="email">
+                                    <p>alfredo.bartolote@adaits.es</p>
+                                </div>
+                                
+        
+                            </div>
+        
+                        </div>
+                
+                    </div>
+                
+                <div class="container-footer">
+                    <div class="footer">
+                        <div class="copyright">
+                            © 2019 Todos los Derechos Reservados | <a href="index.html">SellFast.</a>
+                        </div>
+    
+                        <div class="information">
+                            <a href="index.html">Informacion Compañia</a> | <a href="index.html">Privacion y Politica</a> | <a href="index.html">Terminos y Condiciones</a>
+                        </div>
+                    </div>
+        
+                </div>
+                
+                </footer>
+             </div>
+    </div>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="scripts.js"></script>
+</body>
+</html>

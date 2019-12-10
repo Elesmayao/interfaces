@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>SellFast</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	
+	
+</head>
+<body>
+	<div class="grid-container">
+  		<div class="header">
+  			<header class="headerUno">
+  				<div class="container logo-nav-container">
+					<a href="#interesaMuebles" class="logo">Sell fast</a>
+					  <!--Utilizo el atributo translate en Ver menú para que no se traduzca--> 
+  					<span class="menu-icon" translate="no">Ver menú</span>
+  					<nav class="navigation">
+  						<ul>
+  							<li><a href="index.html">Mensajes</a></li>
+  							<li><a href="index.html">Tus anuncios</a></li>
+  							<li><a href="index.html">Favoritos</a></li>
+  							<li><a href="ayuda.html">Ayuda</a></li>
+  							<li><a href="index.html" class="pontuanuncio">Pon tu anuncio</a></li>
+  							<li><a href="index.html">Iniciar sesión</a></li>
+  						</ul>
+  					</nav>
+  				</div>
+  			</header>
+  		</div>
+   		<div class="contenido">
+   			<div class="main">
+   				<div class="container2 menu-con-iconos">
+   					<div class="titulo">
+   						<h1>¿Qué estás buscando?</h1>
+              <form>
+					<!--El autocomplete permite predecir al navegador el valor, en función de los valores introducidos anteriormente , el navegador nos muestra
+						opciones para completar el campo. He utilizado autocomplete OFF porque solo tengo este input en este form-->
+				<label for="barrabusqueda">Quiero buscar...</label>
+					<!--Autofocus hace que ese input sea el foco para ingresar información cuando se carga la página, a no ser que el usuario lo cambie 
+						(escribiendo en otro lugar o haciendo click en otro sitio por ejemplo).
+					Lo he utilizado en este input por si el usuario quiere buscar algo rapido nada más tenga que escribir lo que quiere al entrar.-->
+				<input type="search" id="barrabusqueda" autocomplete="off" autofocus>
+				<button type="submit" class="btn">Buscar</button>
+              </form>
+   					</div>
+   					<div class="lista-iconos-menu">
+   						<ul>
+   							<li><img src="imagenes/flechaiz.png" alt="flecha para la izquierda"></li>
+   							<li><a href="anuncios.html"><img src="imagenes/casa.png" alt="Moviliario"></a></li>
+   							<li><a href="anuncios.html"><img src="imagenes/vehiculo.png" alt="Vehiculos"></a></li>
+   							<li><a href="anuncios.html"><img src="imagenes/pc.png" alt="Ordenadores"></a></li>
+   							<li><a href="anuncios.html"><img src="imagenes/tlfn.png" alt="Moviles"></a></li> 							
+   							<li><a href="anuncios.html"><img src="imagenes/percha.png" alt="Moda"></a></li>
+   							<li><a href="anuncios.html"><img src="imagenes/mando.png" alt="Gamming"></a></li>
+   							<li><a href="anuncios.html"><img src="imagenes/bici.png" alt="Deportes"></a></li>
+   							<li><img src="imagenes/flechade.png" alt="Flecha para la derecha"></li>
+   						</ul>
+					</div>
+            		<div class="destacados">
+						<section class="lomasdestacado">
+							<h2>Lo más buscado de hoy...</h2>
+						</section> 
+						<div class="imagenesDestacados">
+							<div class="divDestacado">
+								<a href="anuncios.html">
+									<!--Utilizamos la etiqueta semantica figure y figcaption-->
+									<figure>
+										<img src="imagenes/pcgamer.jpg" alt="PC GAMER">
+										<figcaption class="textoDestacado">PC GAMER</figcaption>
+									</figure>
+								</a>
+							</div>
+							<div class="divDestacado">
+								<a href="anuncios.html">
+									<figure>
+										<img src="imagenes/bicimonta.jpg" alt="Bicicletas de montaña">
+										<figcaption class="textoDestacado">Bicicleta de montaña</figcaption>
+									</figure>
+								</a>
+							</div>
+							<div class="divDestacado">
+								<a href="anuncios.html">
+									<figure>
+										<img src="imagenes/play4.jpg" alt="Play 4">
+										<figcaption class="textoDestacado"> Play 4</figcaption>
+									</figure>
+								</a>
+							</div>
+							<div class="divDestacado">                	
+								<a href="anuncios.html">
+									<figure>
+										<img src="imagenes/iphone11.jpg" alt="IPHONE X">
+										<figcaption class="textoDestacado">Iphone X</figcaption>
+									</figure>
+								</a>               
+							</div>
+							<div class="divDestacado">                	
+								<a href="anuncios.html">
+									<figure>
+										<img src="imagenes/xbox.jpg" alt="XBOX ONE">
+										<figcaption class="textoDestacado">XBOX ONE</figcaption>
+									</figure>
+								</a>                   
+							</div>
+							<div class="divDestacado">                	
+								<a href="anuncios.html">
+									<figure>
+										<img src="imagenes/satisfayer.jpg" alt="SATISFAYER">
+										<figcaption class="textoDestacado">SATISFAYER PENGÜIN</figcaption>
+									</figure>
+								</a>             
+							</div>
+						</div>
+					</div>
+					<div class="interesaMuebles" id="interesaMuebles">
+						<section class="renovar">
+							<h2>¿ Es hora de dar nueva cara al hogar ?</h2>
+						</section> 
+						<div class="imagenesInteresa">
+								<div class="divInteresa">
+									<a href="anuncios.html"><img src="imagenes/vintage.jpg" alt="Sofás Vintage"></a>
+									<div class="textoInteresa">
+										Sofás Vintage
+									</div>
+								</div>
+								<div class="divInteresa">
+									<a href="anuncios.html"><img src="imagenes/silla.jpg" alt="Sillas"></a>
+									<div class="textoInteresa">
+										Sillas
+									</div>
+								</div>
+								<div class="divInteresa">
+									<a href="anuncios.html"><img src="imagenes/mueble.jpg" alt="Mueble de television"></a>
+									<div class="textoInteresa">
+										Muebles TV
+									</div>
+								</div>
+								<div class="divInteresa">                	
+									<a href="anuncios.html"><img src="imagenes/cama.jpg" alt="Camas"></a>   
+									<div class="textoInteresa">
+										Camas
+									</div>                  
+								</div>
+						</div>
+					</div>
+   				</div>
+			</div>
+   		</div>
+ 		<div class="footer">
+			<footer>
+       
+				<div class="container-footer-all">
+						 
+				   	<div class="container-body">
+				 
+						<div class="colum1">
+							<h1>Mas informacion de la compañia</h1>
+				 
+							<p>Compañía dedicada a poner en contacto a compradores y vendedores de productos nuevos y de segunda mano </p>
+				 
+						</div>
+				 
+						<div class="colum2">
+				 
+							<h1>Redes Sociales</h1>
+					
+							<div class="row">
+                                    
+                                    <a href="facebook.com" target="blank"><img src="imagenes/facebook.png" alt="Facebook"></a>
+                                    <p>Siguenos en Facebook<p>
+                                </div>
+                                <div class="row">
+                                    <a href="twitter.com" target="blank"><img src="imagenes/twitter.png" alt="Twitter"></a>
+                                    <p>Siguenos en Twitter<p>
+                                </div>
+                                <div class="row">
+                                    <a href="instagram.com" target="blank"><img src="imagenes/instagram.png" alt="Instagram"></a>
+                                    <p>Siguenos en Instagram<p>
+                                </div>
+                                <div class="row">
+                                    <a href="google.com" target="blank"><img src="imagenes/google-plus.png" alt="Google Plus"></a>
+                                    <p>Siguenos en Google Plus<p>
+                                </div>
+                                <div class="row">
+                                    <a href="https://www.pinterest.es/" target="blank"><img src="imagenes/pinterest.png" alt="Pinterest"></a>
+                                    <p>Siguenos en Pinterest<p>
+                                </div>
+	
+	
+						</div>
+	
+						<div class="colum3">
+		
+							<h1>Informacion Contactos</h1>
+		
+							<div class="row2">
+								<img src="imagenes/house.png" alt="Direccion">
+								<p>Sevilla, 
+								España<br>
+								Avenida Turia,
+								ADA-ITS</p>
+							</div>
+		
+							<div class="row2">
+								<img src="imagenes/smartphone.png" alt="Contacto" id="numero">
+								<p>+34 954847234</p>
+							</div>
+		
+							<div class="row2">
+								<img src="imagenes/contact.png" alt="Email" id="email">
+								<p>alfredo.bartolote@adaits.es</p>
+							</div>
+	
+						</div>
+	
+					</div>
+			
+				</div>
+			
+			<div class="container-footer">
+				<div class="footer">
+					<div class="copyright">
+						© 2019 Todos los Derechos Reservados | <a href="#interesaMuebles">Sell Fast</a>
+					</div>
+
+					<div class="information">
+						<a href="ayuda.html">Informacion Compañia</a> | <a href="ayuda.html">Privacion y Politica</a> | <a href="ayuda.html">Terminos y Condiciones</a>
+					</div>
+				</div>
+	
+			</div>
+			
+			</footer>
+ 		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="scripts.js"></script>
+</body>
+</html>
