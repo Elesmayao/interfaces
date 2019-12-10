@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>SellFast/Mis Anuncios</title>
+	<title>Gamming</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="anuncios.css">
@@ -13,14 +13,15 @@
   		<div class="header">
   			<header class="headerUno">
   				<div class="container logo-nav-container">
-  					<a href="#" class="logo">Sell fast</a>
-  					<span class="menu-icon">Ver menú</span>
+					<a href="#" class="logo">Sell fast</a>
+					<!--Utilizo el atributo translate en Ver menú para que no se traduzca--> 
+  					<span class="menu-icon" translate="no">Ver menú</span>
   					<nav class="navigation">
   						<ul>
   							<li><a href="#">Mensajes</a></li>
   							<li><a href="#">Tus anuncios</a></li>
   							<li><a href="#">Favoritos</a></li>
-  							<li><a href="#">Ayuda</a></li>
+  							<li><a href="#" class>Ayuda</a></li>
   							<li><a href="#" class="pontuanuncio">Pon tu anuncio</a></li>
   							<li><a href="#">Iniciar sesión</a></li>
   						</ul>
@@ -30,27 +31,153 @@
   		</div>
    		<div class="contenido">
    			<div class="main">
-                   <div class="filtrar">
-                        <form>
-                            <label for="selectFiltrar">Sección</label>
-                            <select class="selectFiltrar" id="selectFiltrar">
-                                <option value="Gamming" >Gamming</option>
-                                <option value="Moviliario">Moviliario</option>
-                                <option value="Vehiculos">Vehiculos</option>
-                                <option value="Ordenadores">Ordenadores</option>
-                                <option value="Moviles">Moviles</option>
-                                <option value="audi">Moda</option>
-                                <option value="audi">Deportes</option>
-                            </select>
-                            <label for="precio">Precio</label>
-                            
-                        </form>
-                   </div>
+					<div class="migasdepan">
+						<a href="index.html">home</a>/<a href="#">Sección</a>/<a href="#">Gamming</a>
+					</div>
+					<section class="todologamming">
+						<h2>Todo lo que quieras encontrar de gamming está aquí!</h2>
+					</section> 
+                   <form>
+						<label for="barrabusqueda">Quiero buscar...</label>
+						<!--El autocomplete permite predecir al navegador el valor, en función de los valores introducidos anteriormente , el navegador nos muestra
+							opciones para completar el campo. He utilizado autocomplete OFF porque es en el único input que he podido utilizarlo en este form-->
+						<input type="search" id="barrabusqueda" autocomplete="off">
+					    <div class="filtrar">                      
+							<ul>
+								<li>
+									<label for="selectFiltrar">Sección: </label>
+									<select class="selectFiltrar" id="selectFiltrar">
+										<option value="Gamming" >Gamming</option>
+										<option value="Moviliario">Moviliario</option>
+										<option value="Vehiculos">Vehiculos</option>
+										<option value="Ordenadores">Ordenadores</option>
+										<option value="Moviles">Moviles</option>
+										<option value="audi">Moda</option>
+										<option value="audi">Deportes</option>
+									</select>
+								</li>
+								<li>
+									<!--Autofocus hace que ese input sea el foco para ingresar información cuando se carga la página, a no ser que el usuario lo cambie 
+									(escribiendo en otro lugar o haciendo click en otro sitio por ejemplo).
+									Lo he utilizado en este input por si el usuario quiere buscar algo por un precio en concreto solo tenga que escribir 
+									el precio nada mas entrar.-->
+									<label for="selectPrecio">Precio: </label>
+									<input type="number" id="selectPrecio" placeholder="Precio.." autofocus>
+								</li>
+								<li>
+									<label for="envios">Hago envíos</label>
+									<input type="checkbox" id="envios" name="selectExtra">
+									<label for="acepto">Acepto Intercambios</label>
+									<input type="checkbox" id="acepto" name="selectExtra">
+									<label for="urge">Le urge vender</label>
+									<input type="checkbox" id="urge" name="selectExtra">
+								</li>	
+								<li>
+									<label for="24">24h</label>
+									<input type="radio" id="24" value="24h" name="selectFecha">
+									<label for="7">7 días</label>
+									<input type="radio" id="7" value="7dias" name="selectFecha">
+									<label for="30">30 días</label>
+									<input type="radio" id="30" value="30dias" name="selectFecha">
+								</li>	
+							</ul>
+						</div>
+					</form>
+					<div class="contenidoGamming">
+							<div class="imagenesGamming">
+								<div class="divGamming">
+									<a href=""><img src="imagenes/pcgamer.jpg" alt="PC GAMER"></a>
+									<div class="textoGamming">
+										<p>PC GAMER</p>
+										<p>Precio</p>
+									</div>
+								</div>
+								<div class="divGamming">
+									<a href=""><img src="imagenes/bicimonta.jpg" alt="Bicicletas de montaña"></a>
+									<div class="textoGamming">
+										<p>PC GAMER</p>
+										<p>Precio</p>
+									</div>
+								</div>
+								<div class="divGamming">
+									<a href=""><img src="imagenes/play4.jpg" alt="Play 4"></a>
+									<div class="textoGamming">
+										<p>PC GAMER</p>
+										<p>Precio</p>
+									</div>
+								</div>
+								<div class="divGamming">                	
+									<a href=""><img src="imagenes/iphone11.jpg" alt="IPHONE X"></a>  
+									<div class="textoGamming">
+										<p>PC GAMER</p>
+										<p>Precio</p>
+									</div>                  
+								</div>
+								<div class="divGamming">                	
+									<a href=""><img src="imagenes/iphone11.jpg" alt="IPHONE X"></a>  
+									<div class="textoGamming">
+										<p>PC GAMER</p>
+										<p>Precio</p>
+									</div>                  
+								</div>
+								<div class="divGamming">                	
+									<a href=""><img src="imagenes/iphone11.jpg" alt="IPHONE X"></a>  
+									<div class="textoGamming">
+										<p>PC GAMER</p>
+										<p>Precio</p>
+									</div>                  
+								</div>
+								<div class="divGamming">                	
+									<a href=""><img src="imagenes/iphone11.jpg" alt="IPHONE X"></a>  
+									<div class="textoGamming">
+										<p>PC GAMER</p>
+										<p>Precio</p>
+									</div>                  
+								</div>
+								<div class="divGamming">                	
+									<a href=""><img src="imagenes/iphone11.jpg" alt="IPHONE X"></a>  
+									<div class="textoGamming">
+										<p>PC GAMER</p>
+										<p>Precio</p>
+									</div>                  
+								</div>
+								<div class="divGamming">                	
+									<a href=""><img src="imagenes/iphone11.jpg" alt="IPHONE X"></a>  
+									<div class="textoGamming">
+										<p>PC GAMER</p>
+										<p>Precio</p>
+									</div>                  
+								</div>
+								<div class="divGamming">                	
+									<a href=""><img src="imagenes/iphone11.jpg" alt="IPHONE X"></a>  
+									<div class="textoGamming">
+										<p>PC GAMER</p>
+										<p>Precio</p>
+									</div>                  
+								</div>
+								<div class="divGamming">                	
+									<a href=""><img src="imagenes/iphone11.jpg" alt="IPHONE X"></a>  
+									<div class="textoGamming">
+										<p>PC GAMER</p>
+										<p>Precio</p>
+									</div>                  
+								</div>
+								<div class="divGamming">                	
+									<a href=""><img src="imagenes/iphone11.jpg" alt="IPHONE X"></a>  
+									<div class="textoGamming">
+										<p>PC GAMER</p>
+										<p>Precio</p>
+									</div>                  
+								</div>
+
+							</div>
+						</div>
+						
+            </div>
                    <div class="anuncios">
 
                    </div>			
-			</div>
-   		</div>
+		</div>
  		<div class="footer">
 			<footer>
        

@@ -22,6 +22,7 @@
 	text-align: center;
 }
 
+/*primer selector*/
 body{
 	font-family: georgia;
 	color: #3E4341;
@@ -30,6 +31,7 @@ body{
 	margin:0;
 }
 
+/*segundo selector*/
 .container{
 	width: 85%;
 	max-width: 1200px;
@@ -45,8 +47,10 @@ body{
 	left: 0;
 	top: 0;
 	right: 0;
+	z-index: 1;
 }
 
+/*tercer selector*/
 .header a{
 	color: white;
 	text-decoration: none;
@@ -89,6 +93,7 @@ body{
 	border-radius: 5px;
 }
 
+/*cuarto selector*/
 .navigation ul li a:hover{
 	background:#4a4a4a ;
 }
@@ -125,7 +130,7 @@ body{
 	margin-top: 10%;
 }
 .destacados {
-	white-space: wrap;
+	flex-wrap: wrap;
 	width: auto;
 	margin-top: 10%;
 	background: #F2F3F5;
@@ -133,12 +138,13 @@ body{
 }
 
 .interesaMuebles{
-	white-space: wrap;
+	flex-wrap: wrap;
 	width: auto;
 	margin-top: 10%;
 	background: #F2F3F5;
 }
 
+/*quinto selector*/
 #barrabusqueda{
 	width: 90%;
 	border-radius: 20px;
@@ -358,7 +364,7 @@ footer{
     .colum3{
         margin-top: 40px;
     }
-
+}
 @media (max-width: 800px){
 	.menu-icon{
 		display: block;
@@ -392,6 +398,7 @@ footer{
 		background:#4a4a4a ;
 	}
 
+	/*sexto selector*/
 	.lista-iconos-menu ul li:nth-child(6){
   		display: none;
 	}

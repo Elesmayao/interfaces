@@ -43,6 +43,7 @@
       left: 0;
       top: 0;
       right: 0;
+      z-index: 1;
   }
   
   .header a{
@@ -87,11 +88,85 @@
       background:#4a4a4a ;
   }
 
-  .filtrar{
-      margin-top: 10%;
+  .main{
+    margin-top: 8%;
   }
 
+  #barrabusqueda{
+	width: 90%;
+	border-radius: 20px;
+  }
 
+  .filtrar{
+      flex-wrap: wrap;
+      margin-left: 7%;
+  }
+
+  
+  .filtrar ul{
+    list-style: none;
+  }
+
+  .filtrar ul li {
+    display: inline-block;
+    border: 1px solid #D3D3D3;
+    border-radius: 20px;
+    padding:5px;
+    margin-right: 10px;
+  }
+
+  .contenidoGamming{
+      background: #F2F3F5;
+      margin-top: 10%;
+  }
+  .divGamming{
+      width: 270px;
+  }
+
+  .todologamming{
+      text-align: center;
+  }
+
+  .imagenesGamming{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-left:7%;
+	margin-right:7%;
+    }
+
+    .imagenesGamming div{
+        margin-bottom: 10px;
+    }
+
+    .imagenesGamming img{
+        margin: 10px;
+        width: 250px;
+        height: 250px;
+        border-radius:10px;
+    }
+
+    .textoGamming{
+        width: 100%;
+    }
+
+    .textoGamming p{
+        text-align: center;
+    }
+
+    .imagenesGamming div{ 
+        -webkit-transition: transform .5s;
+        -ms-transition: transform .5s;
+        -moz-transition: transform .5s;
+        -o-transition: transform .5s;
+    }
+
+    .imagenesGamming div:hover{
+        -webkit-transform:translate(0px,-25px);
+        -ms-transform:translate(0px,-25px);
+        -moz-transform:translate(0px,-25px);
+        -o-transform:translate(0px,-25px);
+    }
   
   footer{
       width: 100%;
@@ -202,6 +277,9 @@
       color: #C7C7C7;
   }
   
+  .migasdepan a{
+    text-decoration: none;
+    }
   
   @media screen and (max-width: 1100px){
       
@@ -217,6 +295,7 @@
       .colum3{
           margin-top: 40px;
       }
+    }
   
   @media (max-width: 800px){
       .menu-icon{
@@ -250,13 +329,18 @@
       .navigation ul li a:hover{
           background:#4a4a4a ;
       }
+      .contenidoGamming div{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
   }
+}
   
   @media (max-width: 411px){
       .main{
           padding-top: 8rem;
       }
-
-  
-  }
-  
+      #barrabusqueda{
+        width: 60%;
+      }
+    }

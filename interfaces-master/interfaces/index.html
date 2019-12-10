@@ -13,8 +13,9 @@
   		<div class="header">
   			<header class="headerUno">
   				<div class="container logo-nav-container">
-  					<a href="#" class="logo">Sell fast</a>
-  					<span class="menu-icon">Ver menú</span>
+					<a href="#" class="logo">Sell fast</a>
+					  <!--Utilizo el atributo translate en Ver menú para que no se traduzca--> 
+  					<span class="menu-icon" translate="no">Ver menú</span>
   					<nav class="navigation">
   						<ul>
   							<li><a href="#">Mensajes</a></li>
@@ -34,8 +35,13 @@
    					<div class="titulo">
    						<h1>¿Qué estás buscando?</h1>
               <form>
-                <input type="search" id="barrabusqueda" placeholder=" Buscando...">
-                <button>Buscar</button>
+					<!--El autocomplete permite predecir al navegador el valor, en función de los valores introducidos anteriormente , el navegador nos muestra
+						opciones para completar el campo. He utilizado autocomplete OFF porque solo tengo este input en este form-->
+				<label for="barrabusqueda">Quiero buscar...</label>
+					<!--Autofocus hace que ese input sea el foco para ingresar información cuando se carga la página, a no ser que el usuario lo cambie 
+						(escribiendo en otro lugar o haciendo click en otro sitio por ejemplo).
+					Lo he utilizado en este input por si el usuario quiere buscar algo rapido nada más tenga que escribir lo que quiere al entrar.-->
+                <input type="search" id="barrabusqueda" autocomplete="off" autofocus>
               </form>
    					</div>
    					<div class="lista-iconos-menu">
